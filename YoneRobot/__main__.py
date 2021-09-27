@@ -81,29 +81,29 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ʏᴏɴᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/Yone_Robot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ʏᴏɴᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="t.me/The_Piller_Of_Autumn_Bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="yone_"),
+        InlineKeyboardButton(text="☘️ᴀʙᴏᴜᴛ☘", callback_data="yone_"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="🛠ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="⚙ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` [yone🙋‍♀️](https://telegra.ph/file/082096b101615e33eaf19.jpg) 
+`ʜɪ.. ɪ'ᴍ` [The Piller Of Autumn](https://telegra.ph/file/082096b101615e33eaf19.jpg) 
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
 yone_IMG = "https://telegra.ph/file/7e61fe06a9c02747249c4.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @kittu5588 \
- Supporting isnt always financial! \
+ You can support the project via [Telegram](#) or by contacting @boy_alone_in_universe \
+ Supporting isnt always financial!Just Join Our Channels\
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -189,7 +189,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="🔙BACK", callback_data="help_back")]]
                     ),
                 )
 
@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "I'm awake already🚀!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -303,7 +303,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]
                 ),
             )
 
@@ -349,22 +349,22 @@ def yone_about_callback(update, context):
     query = update.callback_query
     if query.data == "yone_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *yone*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *The Piller Of Autumn*,Ride With me in Around The Universe....
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_yone's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/noob-kittu/YoneRobot).
-                 \n\nIf you have any question about yone, let us know at .""",
+                 \n\n_I'm licensed under the GNU General Public License v3.0_
+                 \nHere is the [🛒Repository](https://github.com/parkseojoon2005/The-Piller-of_autumn).
+                 \n\nIf you have any question about me, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="yone_back")
+                    InlineKeyboardButton(text="🔙Back", callback_data="yone_back")
                  ]
                 ]
             ),
@@ -384,14 +384,14 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *yone*
-                 \nHere is the [Source Code](https://github.com/Noob-kittu/YoneRobot) .""",
+            text=""" Hi..🤗 I'm *The Piller Of Autumn*
+                 \nHere is the [Source Code](https://github.com/parkseojoon5/The-piller-ofThe-piller-of-autumn) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                    InlineKeyboardButton(text="🔙Go Back", callback_data="source_back")
                  ]
                 ]
             ),
@@ -420,7 +420,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="♾Help",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -436,7 +436,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="🌱Help",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -457,7 +457,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]
             ),
         )
 
@@ -530,7 +530,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="🔙Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -599,14 +599,14 @@ def get_settings(update: Update, context: CallbackContext):
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
-            text = "Click here to get this chat's settings, as well as yours."
+            text = "Heyaa,Are You Ready to Go???Click here to get this chat's settings, as well as yours."
             msg.reply_text(
                 text,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="🔙Settings",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
